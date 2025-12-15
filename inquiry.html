@@ -9,6 +9,7 @@
 
 </head>
 <body>
+
   <header>
     <div class="top-row">
       <img src="https://assets.codepen.io/296057/logo-nav.png" class="logo" alt="logo" />
@@ -27,49 +28,49 @@
     </nav>
 
   </header>
-  <!-- FORM SECTION -->
-<div class="container">
+  <script >
+    <div class="container">
   <form id="form">
-    
     <!-- Basic Info Section -->
     <div class="basic-info">
       <label for="name">Your Name</label>
-      <input type="text" id="name" placeholder="Jane Doe" required>
+      <input type="text" name="yourname" id="name" placeholder="Jane Doe" required/>
 
       <label for="mail">Email:</label>
-      <input type="email" id="mail" required>
+      <input type="email" id="mail" name="user_email" required />
 
       <label for="phone">Phone:</label>
-      <input type="tel" id="phone" placeholder="123-456-7890">
+      <input type="tel" id="phone" name="phone" placeholder="123-456-7890" />
     </div>
 
-    <!-- Comments Section -->
+    // Comments Section
     <div class="text-area">
       <label for="excited">Comments</label>
-      <textarea id="excited" rows="4" cols="40"></textarea>
+      <textarea id="excited" name="excited" rows="4" cols="40"></textarea>
 
-      <!-- Dropdown -->
+      //  Dropdown for coffee flavor 
       <label for="dropdown">Choose a coffee flavor:</label>
-      <select id="dropdown">
+      <select id="dropdown" name="coffee">
         <option value="caramel">Caramel</option>
         <option value="frenchvanilla">French Vanilla</option>
         <option value="hazelnut">Hazelnut</option>
       </select>
 
-      <!-- Radio Buttons -->
+      // Radio buttons for choice
       <p>Choose one:</p>
       <label>
-        <input type="radio" name="choice" required> Buy Coffee
+        <input type="radio" name="choice" value="Buy Coffee" required/> Buy Coffee
       </label>
       <label>
-        <input type="radio" name="choice"> Job Application
+        <input type="radio" name="choice" value="Job Application"/> Job Application
       </label>
 
       <button type="submit">Submit</button>
     </div>
-
   </form>
 </div>
+  </script>
+  
 
 
 
@@ -84,6 +85,5 @@
 
   </footer>
 </div>
-
 </body>
 </html>
