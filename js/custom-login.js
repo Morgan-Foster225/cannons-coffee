@@ -10,7 +10,7 @@ function onFormSubmit(event) {
   const dataObj = Object.fromEntries(data.entries());
   console.log(dataObj);
 
-  let name = dataObj.yourname; // input must have name="yourname"
+  let name = dataObj.yourname; 
 
   const welcomeMsg = document.createElement("p");
   welcomeMsg.textContent = `Welcome, ${name}! You are logged in!`;
