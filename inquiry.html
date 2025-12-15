@@ -27,49 +27,49 @@
     </nav>
 
   </header>
-  <script >
-    <div class="container">
+  <!-- FORM SECTION -->
+<div class="container">
   <form id="form">
+    
     <!-- Basic Info Section -->
     <div class="basic-info">
       <label for="name">Your Name</label>
-      <input type="text" name="yourname" id="name" placeholder="Jane Doe" required/>
+      <input type="text" id="name" placeholder="Jane Doe" required>
 
       <label for="mail">Email:</label>
-      <input type="email" id="mail" name="user_email" required />
+      <input type="email" id="mail" required>
 
       <label for="phone">Phone:</label>
-      <input type="tel" id="phone" name="phone" placeholder="123-456-7890" />
+      <input type="tel" id="phone" placeholder="123-456-7890">
     </div>
 
-    // Comments Section
+    <!-- Comments Section -->
     <div class="text-area">
       <label for="excited">Comments</label>
-      <textarea id="excited" name="excited" rows="4" cols="40"></textarea>
+      <textarea id="excited" rows="4" cols="40"></textarea>
 
-      //  Dropdown for coffee flavor 
+      <!-- Dropdown -->
       <label for="dropdown">Choose a coffee flavor:</label>
-      <select id="dropdown" name="coffee">
+      <select id="dropdown">
         <option value="caramel">Caramel</option>
         <option value="frenchvanilla">French Vanilla</option>
         <option value="hazelnut">Hazelnut</option>
       </select>
 
-      // Radio buttons for choice
+      <!-- Radio Buttons -->
       <p>Choose one:</p>
       <label>
-        <input type="radio" name="choice" value="Buy Coffee" required/> Buy Coffee
+        <input type="radio" name="choice" required> Buy Coffee
       </label>
       <label>
-        <input type="radio" name="choice" value="Job Application"/> Job Application
+        <input type="radio" name="choice"> Job Application
       </label>
 
       <button type="submit">Submit</button>
     </div>
+
   </form>
 </div>
-  </script>
-  
 
 
 
