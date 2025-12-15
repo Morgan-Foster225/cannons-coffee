@@ -1,7 +1,6 @@
 let container = document.querySelector(".container");
 let form = document.querySelector("#form");
 
-
 form.addEventListener("submit", onFormSubmit);
 
 function onFormSubmit(event) {
@@ -11,13 +10,12 @@ function onFormSubmit(event) {
   const dataObj = Object.fromEntries(data.entries());
   console.log(dataObj);
 
-  let name = dataObj.yourname;
+  let name = dataObj.yourname; // input must have name="yourname"
 
   const welcomeMsg = document.createElement("p");
   welcomeMsg.textContent = `Welcome, ${name}! You are logged in!`;
   container.appendChild(welcomeMsg);
 
   form.reset();
-
   form.style.display = "none";
- }
+}
