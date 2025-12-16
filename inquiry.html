@@ -9,8 +9,7 @@
 
 </head>
 <body>
-
-  <header>
+<header>
     <div class="top-row">
       <img src="https://assets.codepen.io/296057/logo-nav.png" class="logo" alt="logo" />
       <h1>CANNONS COFFEE</h1>
@@ -23,32 +22,32 @@
         <li><a href="https://7brew.com/about-us" target="_blank">About</a></li>
         <li><a href="mailto:morgan.m.foster225@gmail.com" target="_blank">Contact</a></li>
         <li><a href="login.html" target="_blank">Login</a></li>
-         <li><a href="inquiry.html" target="_blank">Inquiry</a></li>
       </ul>
     </nav>
 
   </header>
-  <script >
-    <div class="container">
+ 
+<div class="container">
   <form id="form">
+
     <!-- Basic Info Section -->
     <div class="basic-info">
       <label for="name">Your Name</label>
-      <input type="text" name="yourname" id="name" placeholder="Jane Doe" required/>
+      <input type="text" name="yourname" id="name" required>
 
       <label for="mail">Email:</label>
-      <input type="email" id="mail" name="user_email" required />
+      <input type="email" id="mail" name="user_email" required>
 
       <label for="phone">Phone:</label>
-      <input type="tel" id="phone" name="phone" placeholder="123-456-7890" />
+      <input type="tel" id="phone" name="phone">
     </div>
 
-    // Comments Section
+    <!-- Comments Section -->
     <div class="text-area">
       <label for="excited">Comments</label>
-      <textarea id="excited" name="excited" rows="4" cols="40"></textarea>
+      <textarea id="excited" name="excited"></textarea>
 
-      //  Dropdown for coffee flavor 
+      <!-- Dropdown -->
       <label for="dropdown">Choose a coffee flavor:</label>
       <select id="dropdown" name="coffee">
         <option value="caramel">Caramel</option>
@@ -56,22 +55,36 @@
         <option value="hazelnut">Hazelnut</option>
       </select>
 
-      // Radio buttons for choice
+      <!-- Radio buttons -->
       <p>Choose one:</p>
       <label>
-        <input type="radio" name="choice" value="Buy Coffee" required/> Buy Coffee
+        <input type="radio" name="choice" value="Buy Coffee" required>
+        Buy Coffee
       </label>
       <label>
-        <input type="radio" name="choice" value="Job Application"/> Job Application
+        <input type="radio" name="choice" value="Job Application">
+        Job Application
       </label>
 
       <button type="submit">Submit</button>
     </div>
+
   </form>
 </div>
-  </script>
-  
 
+<!-- JS goes LAST -->
+<script src="js/custom-inquiry.js"></script>
+
+<footer>
+  <div class="footer-content">
+    <img src="https://assets.codepen.io/t-15440/cannons-coffee-logo.png" alt="Cannons Coffee, Beans of Joy! Est. 2014" />
+  </div>
+
+  <p class="footer-content">EST. 2014</p>
+
+  <p class="footer-content"> © 2024 Cannons Coffee. All Rights Reserved.</p>
+
+</footer>
 
 
   <footer>
