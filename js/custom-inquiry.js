@@ -16,7 +16,7 @@ function onFormSubmit(event) {
   let comments = dataObj.excited;
   let flavor = dataObj.coffee;
 
-  // Get selected radio button
+// This code finds the selected radio button in a form and safely extracts its display text. If no option is selected, it prevents errors by returning an empty string instead.
   let choiceRadio = form.querySelector('input[name="choice"]:checked');
   let choiceText = choiceRadio ? choiceRadio.parentElement.textContent.trim() : '';
 
